@@ -13,10 +13,14 @@ const logCalc = () => {
 
 const calcUser = () => {
   logCalc();
-  if (calculated > 2) user = 'John'
-  if (calculated > 2) state = 'requesting'
-  if (calculated > 3) state = 'idle'
-}
+  if (calculated > 2) {
+    user = 'John';
+  state = 'requesting';
+  }
+  if (calculated > 3) { 
+    state = 'idle'
+  }
+};
 
 const checkUser = () => {
 	if (user && state === 'requesting') {
